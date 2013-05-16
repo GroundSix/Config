@@ -1,7 +1,7 @@
 {
     "name": "groundsix/config",
     "type": "library",
-    "description": "An abstract authentication framework",
+    "description": "A tool for merging configuration files, works with XML so far",
     "keywords": ["config", "merging", "xml"],
     "require": {
         "php": ">=5.3.0"
