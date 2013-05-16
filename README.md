@@ -91,7 +91,7 @@ Install the project
 	    [application] => Array
 	        (
 	            [template_set] => twig
-	            [environment] => production
+	            [environment] => staging
 	        )
 	    [notice] => Array
 	        (
