@@ -16,6 +16,6 @@
     ],
     "license": "MIT",
     "autoload": {
-        "psr-0": { "GroundSix\\Config": "" }
+        "psr-0": { "GroundSix\\Config": "src/" }
     }
 }
