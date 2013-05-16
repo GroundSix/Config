@@ -10,11 +10,11 @@ abstract class Loader
 		$this->configurations = $configurations_collection;
 	}
 
-	public function loadFile($file_path);
+	abstract public function loadFile($file_path);
 
 	public function loadFiles()
 	{
-		$$configuration_file_paths = func_get_args();
+		$configuration_file_paths = func_get_args();
 		foreach ($configuration_file_paths as $config_file_path) {
 			try {
 				$this->loadFile($config_file_path);

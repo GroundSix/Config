@@ -14,6 +14,13 @@ class XmlLoader extends Loader
 
 	protected function convertSimpleXmlElementToArray(\SimpleXMLElement $configuration)
 	{
-		return (array) $configuration;
+		$configuration = (array) $configuration;
+		$resulting_array = $configuration;
+		foreach ($configuration as $key => $value) {
+			if ($value instanceOf \SimpleXMLElement) {
+				$resulting_array[$key] = $this->convertSimpleXmlElementToArray($value);
+			}
+		}
+		return $resulting_array;
 	}
 }
