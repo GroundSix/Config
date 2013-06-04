@@ -1,5 +1,6 @@
 # Ground Six Configuration Component
 
+[![Total Downloads](https://poser.pugx.org/symfony/symfony/d/total.png)](https://packagist.org/packages/groundsix/config)
 This component allows you to merge a number of configuration files together. Typically you may use a .gitignore so that all developers in your team can maintain their own development-environment-specific settings, however this approach allows you to keep a version controlled configuration file which contains the structure and shared contents, and each developer can override their own settings in a seperate file which they control.
 
 The resulting merged configuration will be an array.
